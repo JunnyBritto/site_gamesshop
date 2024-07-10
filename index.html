@@ -12,20 +12,20 @@
 <body>
     <header>
     <div class="container">
-        <h1>Game Shop</h1> <!-- Começando o cabeçalho com h1 e vou ter uma lista de lado, por isso abri o nav e ul -->
+        <h1>Games Shop</h1> <!-- Começando o cabeçalho com h1 e vou ter uma lista de lado, por isso abri o nav e ul -->
         <nav>
             <ul> <!-- lista que fica sem numero-->
                 <li> <!-- um item da lista-->
-                    <a href="#"> Sobre a loja</a>
+                    <a href="#about"> Sobre a loja</a>
                 </li>
                 <li> 
-                    <a href="#"> Contato</a>
+                    <a href="#contact"> Contato</a>
                 </li>
             </ul>
         </nav>
     </div>
     </header>
-    <section>
+    <section id="about">
         <div class="container">
             <img class="store-front" src="./Images/loja.jpg" alt="Fachada da loja Game Shop" />
             <div>
@@ -44,5 +44,58 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container2">
+            <h2>Contato</h2> <!-- assim que abri uma section, fiz o container. Debaixo da primeira div veio o primeiro titulo, depois abri uma dev pra ter outra sessão, e dentro da dev abri uma dev para cada campo com outros subtitulos-->
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale Conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required/>
+                        <input type="email" placeholder="Seu email" required/>
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./Images/instagram.png" alt="Logo do Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./Images/facebook.png" alt="Logo do Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="./Images/youtube.png" alt="Logo do Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua JavaScript, nº124, Vila HTML - São Paulo-SP
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
